@@ -4,17 +4,6 @@
 	* Where does `the object` come from?
 	* Where does `the object` live?
 	* How does `the object` interact with `other object`?
-* Different Object Intentions
-	* Encapsulation
-	* Utilities
-	* Creation
-	* Storing
-	* Managing / Handling
-
-
-
-
-
 
 -
 -
@@ -28,12 +17,6 @@
 * Where does `the object` live?
 	* Where will `the object` be stored?
 * How does `the object` interact with `other object`?
-
-
-
-
-
-
 
 -
 -
@@ -78,7 +61,6 @@ public class Person {
 	}
 }
 ```
-
 
 -
 # Class Signature
@@ -136,7 +118,7 @@ public class Person { // class signature
 ```
 
 -
-# Calling Constructors<br>From Constructors
+## Calling Constructors<br>From Constructors
 ```java
 public class Person { // class signature
 	private String myName; // instance variable	private boolean amFemale; // instance variable
@@ -155,7 +137,7 @@ public class Person { // class signature
 ```
 
 -
-# Calling Constructors<br>From Constructors
+## Calling Constructors<br>From Constructors
 ```java
 public class Person { // class signature
 	private String myName; // instance variable	private boolean amFemale; // instance variable
@@ -171,8 +153,6 @@ public class Person { // class signature
 	}
 }
 ```
-
-
 
 -
 # Setters<br>(Mutators)
@@ -225,12 +205,6 @@ public class Person { // class signature
 	}
 }
 ```
-
-
-
-
-
-
 
 -
 -
@@ -307,7 +281,7 @@ public class PersonWarehouse {
 ```
 
 -
-# Managers / Handlers<br>(Decorations)
+## Managers / Handlers<br>(Decorations)
 ```java
 public class PersonHandler {
 	private Person person;
@@ -331,7 +305,7 @@ public class PersonHandler {
 
 
 -
-# Environment<br>(Scope)
+## Environment<br>(Scope)
 * Where the objects live and interact collectively
 
 ```java
