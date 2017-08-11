@@ -201,7 +201,7 @@ public class Person { // class signature
 	}
 
 	public String getName() {
-		return this.getName();
+		return this.myName;
 	}
 }
 ```
