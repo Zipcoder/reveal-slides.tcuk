@@ -1,4 +1,4 @@
-# Interfaces and Lambdas
+# Interfaces
 
 -
 -
@@ -63,15 +63,15 @@ public class SomeClass implements SomeInterface {
   public SomeClass() {
     // Constructor
   }
-  
+
   public boolean someBoolFunc() {
     return true;
   }
-  
+
   public Object funcReturnsAnObject() {
     return new Object();
   }
-  
+
   public ReturnType functionName() {
     // Must return some ReturnType
   }
@@ -108,11 +108,11 @@ public class Implementer implements SomeInterface {
   public Implementer() {
     // Constructor
   }
-  
+
   public boolean someBoolFunc() {
     return true;
   }
-  
+
   public void someOtherFunc() {
     System.out.println("Some Other Function");
   }
@@ -147,11 +147,11 @@ public class Usage implements ExtendoInterface {
   public Usage() {
     // empty constructor
   }
-  
+
   public int someIntFunc() {
     return 42;
   }
-  
+
   public boolean someBoolFunc() {
     return true;
   }
@@ -162,7 +162,7 @@ public class Usage implements ExtendoInterface {
 ## Implementing Multiple Interfaces
 
 ```java
-public class Something implements AnInterface, 
+public class Something implements AnInterface,
              AnotherInterface, ThirdInterface
 ```
 
@@ -232,4 +232,3 @@ public class Something implements Comparable<Something> {
 * EventHandler<T>
 * Serializable
 * Coneable
-
