@@ -115,14 +115,6 @@ Slightly more features than Iterators:
 
 -
 -
-## Views
-
-- Lightweight collection implementations
-- No storage functionality
-- Produce subset, empty, singleton, or unmodifiable Collections
-
--
--
 ## Utility Classes
 
 - [Collections](https://docs.oracle.com/javase/8/docs/api/java/util/Collections.html)
