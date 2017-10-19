@@ -197,8 +197,8 @@ public class Person { // class signature
 
 -
 -
-# Utility Clases
-* Defines a set of methods that perform common functions
+# Utility Classes
+* Defines a set of methods (typically static) that perform common functions (typically procedural)
 
 ```java
 // static state; procedural behavior
