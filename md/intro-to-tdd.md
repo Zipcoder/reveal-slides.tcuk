@@ -8,7 +8,7 @@
 
 ###First Law
 
-You may not write production code until you have a written a failing corresponing unit test.
+You may not write production code until you have a written a failing corresponding unit test.
 
 ```
 	public class cow{
@@ -26,7 +26,7 @@ You may not write production code until you have a written a failing corresponin
 -
 ###First Law
 
-You may not write production code until you have a written a failing corresponing unit test.
+You may not write production code until you have a written a failing corresponding unit test.
 
 ```
 public class cow{
