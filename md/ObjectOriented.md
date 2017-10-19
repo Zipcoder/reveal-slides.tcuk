@@ -26,7 +26,7 @@
 * Creation
 * Storing
 * Managing / Handling
-* Environment
+* Entity Scope
 
 
 -
@@ -37,7 +37,6 @@
 ```
 // class signature
 public class Person {
-
 	// instance variables (fields)
 	private String name;
 	private int age;
@@ -48,16 +47,6 @@ public class Person {
 		this.name = name;
 		this.age = age;
 		this.isFemale = isFemale;
-	}
-
-	// getter
-	public String getName() {
-		return this.name;
-	}
-
-	// setter (mutator)
-	public void setName(String differentName) {
-		this.name = differentName;
 	}
 }
 ```
@@ -129,7 +118,7 @@ public class Person { // class signature
 		this.amFemale = false; // setting instance variable
 	}
 
-	public Person(String name, boolean) { // constructor signature
+	public Person(String name, boolean isFemale) { // constructor signature
 		this.myName = name; // setting instance variable
 		this.amFemale = isFemale; // setting instance variable
 	}
@@ -147,7 +136,7 @@ public class Person { // class signature
 		this("Leon", false); // nested constructor call
 	}
 
-	public Person(String name, boolean) { // constructor signature
+	public Person(String name, boolean isFemale) { // constructor signature
 		this.myName = name; // setting instance variable
 		this.amFemale = isFemale; // setting instance variable
 	}
@@ -281,7 +270,7 @@ public class PersonWarehouse {
 ```
 
 -
-## Managers / Handlers<br>(Decorations)
+## Managers / Handlers
 ```java
 public class PersonHandler {
 	private Person person;
@@ -305,7 +294,7 @@ public class PersonHandler {
 
 
 -
-## Environment<br>(Scope)
+## Scope
 * Where the objects live and interact collectively
 
 ```java
