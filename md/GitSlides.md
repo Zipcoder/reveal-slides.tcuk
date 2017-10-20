@@ -86,10 +86,10 @@ Consider that you've started working for a new company that is building a calcul
 `git clone https://github.com/Zipcoder/Calcul8r.git`
 
 -
-Now, `dev` has a `Calul8r` directory, and a `git status` in `dev` shows that there is no git project in `dev`.  Now, you go into `Calcul8r` and do a `git status` to prove that you're up to date with the master branch of the company's `Calcul8r` repo.
+Now, `dev` has a `Calcul8r` directory, and a `git status` in `dev` shows that there is no git project in `dev`.  Now, you go into `Calcul8r` and do a `git status` to prove that you're up to date with the master branch of the company's `Calcul8r` repo.
 
 -
-Next, you run `git branch -a` to see exactly what branches exist on this companies repository.
+Next, you run `git branch -a` to see exactly what branches exist on this company's repository.
 
 > \* master
   remotes/origin/HEAD -> origin/master
@@ -146,7 +146,7 @@ Now you're ready to merge your stuff into your master branch to make sure that e
 First,
 `git pull` to make sure that you're up to date with the remote version.  This way, if someone made a change to master, you won't have issues with your merge.
 
-Next,`git checkout master` and `git merge divide`.
+Next, `git checkout master` and `git merge divide`.
 
 If everything's good, then you will now have all of your commits on top of the master commits.  Otherwise, you'll have to handle a merge conflict.  We'll touch on this later.
 

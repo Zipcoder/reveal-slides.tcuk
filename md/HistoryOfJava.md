@@ -91,7 +91,7 @@ Java has a few versions
 
 #A Timeline
 
-* 1996 Endtroducing by DJ Shadown  :: Java 1.0
+* 1996 Endtroducing by DJ Shadow  :: Java 1.0
 * 1997 Jewelz by O.C. :: Java 1.1 - Inner Classes
 * 1998 Aquemini by Outkast :: Java 1.2
 * 2000 Deltron 3030 by Deltron 3030 :: Java 1.3
@@ -99,7 +99,7 @@ Java has a few versions
 * 2004 Madvillainy by Madvillain :: Java 5.0 - Generics, loops, autoboxing
 * 2006 Donuts by J Dilla :: Java 6.0
 * 2011 Section.80 by Kendrick :: Java 7.0 Switch with Strings
-* 2014 Run the Jewels2 ny RTJ :: Java 8.0 Lambda Expressions 
+* 2014 Run the Jewels 2 by RTJ :: Java 8.0 Lambda Expressions 
 
 
 -
@@ -113,9 +113,9 @@ Java is a subset of C++ it is designed to be a more straight forward version of 
 
 #Java is Object Oriented
 
-Object Oriented Languages are designed to focus on the problem being solved and not the tools used to do it
+Object Oriented Languages are designed to focus on the problem being solved and not the tools used to do it.
 
-Java is designed with objects in mind which allows flexability in the creation of a solution.
+Java is designed with objects in mind, which allows flexibility in the creation of a solution.
 
 -
 -
@@ -129,14 +129,14 @@ Java is designed to work over a network, and intended to enhance communication b
 
 #Java is Robust
 
-Java is a strickly typed language, it is designed tod etect potential problems at compile time.
+Java is a strictly typed language, it is designed to detect potential problems at compile time.
 
 -
 -
 
 #Java is secure
 
-Java design was always focused around facilitating communication over a network, so securitu has always been a priority.
+Java design was always focused around facilitating communication over a network, so security has always been a priority.
 
 Java runs inside of the HEAP which is a memory sandbox, that allows Java to run in isolation inside a machine.
 
@@ -145,28 +145,28 @@ Java runs inside of the HEAP which is a memory sandbox, that allows Java to run 
 
 #Java is Architecturally Neutral
 
-Java code is complied and translated into byte-code. This byte code is executed on the **JVM**. The **JVM can run on any platform or operating system.
+Java code is compiled and translated into bytecode. This bytecode is executed on the **JVM**. The **JVM can run on any platform or operating system.
 
 -
 -
 
 #Java is portable
 
-Java is designed to run on a vast number of devices. Its specification standardised its data types to allow it to provide prodictable functionality across devices.
+Java is designed to run on a vast number of devices. Its specification standardised its data types to allow it to provide predictable functionality across devices.
 
 -
 -
 
 #Java is Interpreted
 
-Java is not completly compiled to an executable. Java is a hybrid in the sense that it compiles to java byte code, and that byte code is what is executed at run time.
+Java is not completely compiled to an executable. Java is a hybrid in the sense that it compiles to Java bytecode, and that bytecode is what is executed at run time.
 
 -
 -
 
 #Java is High Performance
 
-java uses a **just-in-time** compiler. As your applicationis running the interpreter can identify code that is used frequently and compile that down to machine-code to optimize and increase performance.
+Java uses a **just-in-time** compiler. As your application is running, the interpreter can identify code that is used frequently and compile that down to machine-code to optimize and increase performance.
 
 -
 -
