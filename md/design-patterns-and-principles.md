@@ -2,6 +2,7 @@
 
 
 -
+
 # What is a Design Pattern
 * A pattern that arises from the means by which a set of objects communicate.
 * A recognized & established way of solving a problem by object orientation patterns.
@@ -11,6 +12,7 @@
 
 -
 -
+
 # Purpose
 * Assists with the design of a system.
 * Establish vocabulary which communicates a problem, solution, and potential consequences
@@ -95,13 +97,14 @@
 
 
 -
+
 # Design Principles
 * A set of guidelines that helps us to avoid having a bad design.
 
 -
 -
 # DRY Principle
-* Don't repeat yourself
+* Don't Repeat Yourself
 * Aimed to reduce repetition of all kinds.
 * Composition (black-box reuse) to inheritance (white-box reuse)
 	* Inheritance exposes object internals (violation of encapsulation)
@@ -145,6 +148,10 @@
 * The responibility of a class should be entirely encapsulated by the class.
 * The services of a class should be narrowly aligned with the responsibility of that module.
 * Robert C. Martin expresses the principle as, "A class should have only one reason to change."
+
+-
+-
+
 
 -
 -
