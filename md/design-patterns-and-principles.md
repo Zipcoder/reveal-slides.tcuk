@@ -101,6 +101,7 @@
 -
 -
 # DRY Principle
+* Don't repeat yourself
 * Aimed to reduce repetition of all kinds.
 * Composition (black-box reuse) to inheritance (white-box reuse)
 	* Inheritance exposes object internals (violation of encapsulation)
