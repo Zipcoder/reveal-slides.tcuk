@@ -29,18 +29,18 @@
 
 -
 -
-#Throwable Class
+##Throwable Class
 * Throwable Hierarchy
 * Errors
 * Checked Exceptions
 * Unchecked Exceptions
 
 -
-#Throwable Hierarchy
+###Throwable Hierarchy
 <img src = 'https://lh5.googleusercontent.com/WqqNoyFEkZXfmZBBQjgIutY72_BUV6_By_BAe7Ih9u36HfelS3nTWQEYtdRUkQS32Tuhg9P9CUXo-jgvOpkO84vLm2viI4Od0BNustwONdMm7DKZnKC6kyVHyRJbsESLIPV4uBU'>
 
 -
-#Errors
+###Errors
 * The `Error` hierarchy describes internal errors and resource exhaustion situations.
 * Do not advertise internal java errors; Any code can potentially throw an `Error`.
 * `IOError`, `StackOverflowError`, and `OutOfMemoryError` are a few of the commonly encountered `Errors`
@@ -50,7 +50,7 @@
 
 
 -
-#Unchecked Exceptions
+###Unchecked Exceptions
 * Any exception which derives from `Error` or `RuntimeException` class.
 * An Exception subclassing `RuntimeException` is considered to be the programmer's fault.
 	- `ArrayIndexOutOfBoundException` can be avoided by testing array index against array bounds
@@ -58,7 +58,7 @@
 
 
 -
-#Checked Exceptions
+###Checked Exceptions
 * An Exception subclassing `IOException` is _potentially_ not the programmer's fault.
 	- `FileNotFoundException` can be thrown when trying to read from a remote file that a person incidentally removes.
 	- `SQLException` can be thrown as a result of a faulty network connection.
@@ -78,19 +78,19 @@
 
 -
 -
-#Basic Exception Handling
+##Basic Exception Handling
 * What is Exception Handling?
 * Unhandled Exception Example
 * Handled Exception Example
 
 
 -
-#What is Exception Handling?
+###What is Exception Handling?
 * For exceptional situations, Java uses a form of error trapping called, _exception handling_.
 * Exception handling enables the author of the code to record and handle errors in their program.
 
 -
-#<strike>Unchecked</strike> Unhandled Exception Example; Compile Error
+###<strike>Unchecked</strike> Unhandled Exception Example; Compile Error
 ```java
 import java.io.*;
 class FilePrinter {
@@ -114,7 +114,7 @@ class FilePrinter {
 ```
 
 -
-#Exception Handling; Signature Throw Clause
+###Exception Handling; Signature Throw Clause
 ```java
 import java.io.*;
 class FilePrinter {
@@ -135,7 +135,7 @@ class FilePrinter {
 ```
 
 -
-#Exception Handling; Try / Catch
+###Exception Handling; Try / Catch
 ```java
 import java.io.*;
 class FilePrinter {
@@ -187,7 +187,7 @@ class FilePrinter {
 
 -
 -
-#Better Exception Handling
+##Better Exception Handling
 * Multi-Exception Handling
 * Dynamic Exception Handling
 * Uniform Exception Handling (Good)
@@ -197,7 +197,7 @@ class FilePrinter {
 
 
 -
-#Multi-Exception Handling
+###Multi-Exception Handling
 * Consider the case where multiple exceptions may be thrown.
 * For example, in our `FilePrinter` class, the
 	- constructor throws a `FileNotFoundException`
@@ -205,7 +205,7 @@ class FilePrinter {
 * What if we wanted to create a `FilePrinter` object, then print its contents?
 
 -
-#Multi-Exception Handling Examples
+###Multi-Exception Handling Examples
 ```Java
 public class FilePrinterTest {
     private static final String invalidFileName = "";
@@ -237,10 +237,10 @@ public class FilePrinterTest {
 
 }
 ```
- 
+
 
 -
-#Dynamic Exception Handling; Expanded
+###Dynamic Exception Handling; Expanded
 ```Java   
 public class FilePrinterTest {
 	private static final String invalidFileName = "";
@@ -251,7 +251,7 @@ public class FilePrinterTest {
 	    } catch(FileNotFoundException fnfe) {
 	        fnfe.printStackTrace();
 	    }
-	
+
 	    try {
 	        fpt.printFile();
 	    } catch (IOException e) {
@@ -263,7 +263,7 @@ public class FilePrinterTest {
 
 
 -
-#Dynamic Exception Handling; Compressed
+###Dynamic Exception Handling; Compressed
 ```Java   
 public class FilePrinterTest {
 	private static final String invalidFileName = "";
@@ -285,7 +285,7 @@ public class FilePrinterTest {
 
 
 -
-#Uniform Handling Of Exceptions (Good)
+###Uniform Handling Of Exceptions (Good)
 ```Java   
 public class FilePrinterTest {
 	private static final String invalidFileName = "";
@@ -294,14 +294,14 @@ public class FilePrinterTest {
 	    try {
 	        fpt = new FilePrinter(invalidFileName);
 	        fpt.printFile();
-	    
+
 	    // bit-wise operator supported by java 1.7+    
-	    } catch(FileNotFoundException | IOException exception) { 
+	    } catch(FileNotFoundException | IOException exception) {
 	        // handle all exceptions the same way
 	        exception.printStackTrace();
 	    }
 	}
-	
+
 }
 ```
 * Each expected exception in this class is explicitly named.
@@ -309,7 +309,7 @@ public class FilePrinterTest {
 
 
 -
-#Uniform Handling Of Exceptions (Bad)
+###Uniform Handling Of Exceptions (Bad)
 ```Java   
 public class FilePrinterTest {
 	private static final String invalidFileName = "";
@@ -321,10 +321,8 @@ public class FilePrinterTest {
 	    } catch(Exception exception) {
 	        // handle all exceptions the same way
 	        exception.printStackTrace();
-	    } Isn't a number...");
         } catch(IllegalArgumentException iae) {
             iae.printStackTrace();
-            
         }
     }
 
@@ -342,7 +340,7 @@ public class FilePrinterTest {
 
 
 -
-#Recursion <strike>and</strike> Exception Handling
+###Recursion <strike>and</strike> Exception Handling
 * DON'T DO IT!
 * Recursion and Exception Handling do not go together
 * Exceptions keep track of all pending method calls
@@ -373,7 +371,7 @@ public class FilePrinterTest {
 
 -
 -
-#Finally Keyword
+##Finally Keyword
 * Purpose
 * Conditions under which `finally` block is executed
 * Syntax
@@ -381,13 +379,13 @@ public class FilePrinterTest {
 
 
 -
-#Purpose
+###Purpose
 * When code throws an exception, it stops processing the remaining code in the scope, then exits the method.
 * If the method has aqcuired some local resource, then this can become an issue; The program will cease execution, and hold the resource indefinitely.
 * The finally clause executes whether or not an exception was code.
 
 -
-#Conditions under which `finally` block is executed
+###Conditions under which `finally` block is executed
 1. If no exception are thrown.
 2. If exception outside `try` block is thrown.
 3. If an exception is thrown in a `catch` clause.
@@ -395,7 +393,7 @@ public class FilePrinterTest {
 
 
 -
-#Decoupling `finally` clause from `try/catch` clauses
+###Decoupling `finally` clause from `try/catch` clauses
 ```Java
 class BookExample {
 	public void example1() {
@@ -412,7 +410,7 @@ class BookExample {
 	}
 }
 ```
-	
+
 
 
 
@@ -437,7 +435,7 @@ class BookExample {
 
 -
 -
-#Assertions
+##Assertions
 * Assertions are commonly used idiom of defensive programming.
 * Java has a keyword `assert`, which takes two forms:
 	1. `assert condition;`
@@ -446,14 +444,14 @@ class BookExample {
 
 
 -
-#Toggling Assert Statements
+###Toggling Assert Statements
 * By default, assertions are disabled; If an assert statement is passed `false`, no exception is thrown.
 * Assertions can be enabled by running the program with the `-ea` option.
 * `java -ea MyProject` enables for entire project
 * `java -ea:MyClass -ea:com.zipcodewilmington.MyProject` enables for `MyClass`
 
 -
-#When To Use
+###When To Use
 * Assertion failures are intended to be fatal, unrecoverable errors
 * Assertion checks are turned on only during development and testing
 * As an additional check against uncanny method returns.
@@ -480,14 +478,14 @@ class BookExample {
 
 -
 -
-#Logging
+##Logging
 * It's common to use `System.out.println` to check against troublesome code.
 * Once the issue is resolved, these statements are usually removed, or commented out.
 * Later, if the issue persists, the print statements are re-inserted.
 * The Logging API is designed to overcome this issue.
 
 -
-#Principal advantages of Logging API
+###Principal advantages of Logging API
 * It's easy to (un)suppress all log records, or just those below a certain level.
 * Suppressed logs are inexpensive; The penalty for leaving them in your code is minimal.
 * Log records can be directed to different handlers; Console display, writing to file / database, etc.
@@ -497,7 +495,7 @@ class BookExample {
 
 
 -
-#The 7 Logging Levels
+###The 7 Logging Levels
 * By default, loggers will log all messages of `INFO` or higher to console.
 * `SEVERE`
 * `WARNING`
@@ -508,7 +506,7 @@ class BookExample {
 * `FINEST`
 
 -
-#Syntax
+###Syntax
 ```
 public class LogDemo {
 	 // it is advised that you name your logger the same as your Main Application package
