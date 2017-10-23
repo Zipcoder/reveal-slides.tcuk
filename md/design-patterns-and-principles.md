@@ -1,8 +1,7 @@
 # Design<br>Patterns<br>and<br>Principles
 
-
 -
-
+-
 # What is a Design Pattern
 * A pattern that arises from the means by which a set of objects communicate.
 * A recognized & established way of solving a problem by object orientation patterns.
@@ -11,8 +10,6 @@
 * Thoroughly tested strategies which have been proven effective, stable, and scalable.
 
 -
--
-
 # Purpose
 * Assists with the design of a system.
 * Establish vocabulary which communicates a problem, solution, and potential consequences
@@ -36,7 +33,7 @@
 
 
 
-
+-
 -
 # Four Essential Elements of a Pattern
 1. Pattern Name
@@ -44,7 +41,6 @@
 3. Solution
 4. Consequences
 
--
 -
 # 1. Pattern name
 * a word or two we can use to describe a design
@@ -56,8 +52,6 @@
 * Enables discussion and design at a higher level of abstraction.
 * "Bisected Oval Pattern"
 
-
--
 -
 # 2. Problem
 * Describes when to apply pattern
@@ -65,15 +59,12 @@
 * Sometimes problems will include a list of conditions that must be met before it makes sense to apply the pattern.
 * "Is our subject facing forward?"
 
-
--
 -
 # 3. Solution
 * Describes the elements that make up the design, their relationships, respobsibilities, and collaborations.
 * Provides an abstract description of a design problem and how a general arrangement of elements solves it.
 * "_Oval bisection_ allows early planning for placement of facial features"
 
--
 -
 # 4. Consequences
 * The results and trade-offs of applying the pattern.
@@ -95,13 +86,12 @@
 
 
 
-
+-
 -
 
 # Design Principles
 * A set of guidelines that helps us to avoid having a bad design.
 
--
 -
 # DRY Principle
 * Don't Repeat Yourself
@@ -110,10 +100,6 @@
 	* Inheritance exposes object internals (violation of encapsulation)
 * Design to interface, not implementation
 
-
-
-
--
 -
 # WET Principle
 * Violations of DRY are typically referred to as WET solutions
@@ -121,10 +107,6 @@
 	* we enjoy typing
 	* waste everyone's time
 
-
-
-
--
 -
 # Rule of Three
 * Code refactoring rule of thumb
@@ -132,7 +114,7 @@
 
 
 
-
+-
 -
 # SOLID Principle
 * Single Responsibility Principle
@@ -142,18 +124,12 @@
 * Dependency Inversion Principle
 
 -
--
 ## Single Responsibility Principle (SRP)
 * **Every class should have responsibility over a single part of the functionality provided by the software.**
 * The responibility of a class should be entirely encapsulated by the class.
 * The services of a class should be narrowly aligned with the responsibility of that module.
 * Robert C. Martin expresses the principle as, "A class should have only one reason to change."
 
--
--
-
-
--
 -
 ## Open/closed principle (OCP)
 * **Software entities should be open for extension, but closed for modification.**
@@ -164,15 +140,11 @@
 	* A module will be said to be closed if it is available for use by other modules.
 		* Closed since it may be compiled, stored in a library, baselined, and used by client classes.
 
-
-
--
 -
 ## Liskov substitution principle (LSP)
 * **objects in a program should be replaceable with instances of their subtypes without altering the correctness of that program.**
 * [Illustrating LSP](https://stackoverflow.com/questions/56860/what-is-an-example-of-the-liskov-substitution-principle)
 
--
 -
 ## Interface segregation principle (ISP)
 * **many client-specific interfaces are better than one general-purpose interface.**
@@ -180,7 +152,6 @@
 * Splits large, vague interfaces into smaller, specific ones giving the client access to only methods that are of interest to them.
 * This principle should arise naturally from a project properly abiding by SRP
 
--
 -
 ## Dependency inversion principle (DIP)
 * **one should depend upon abstractions, not concretions**
@@ -209,7 +180,7 @@
 
 
 
-
+-
 -
 # Classifying Design Patterns
 * 3 Major types of design patterns:
@@ -241,7 +212,7 @@
 
 
 
-
+-
 -
 # Creational Patterns
 * Purpose - Defer part of object creation to another class
@@ -263,7 +234,6 @@
 
 
 -
--
 ### Eager Initialization
 * **Solution:** the instance of Singleton Class is created at the time of class loading
 * **Consequence:** instance is created even if client application might not be using it.
@@ -280,7 +250,6 @@ public class EagerSingleton {
 }
 ```
 
--
 -
 ### Lazy Initialization
 * **Solution:** creates the instance in the global access method.
@@ -301,9 +270,6 @@ public class LazySingleton {
 }
 ```
 
-
-
--
 -
 ### Bill Pugh Singleton
 * **Solution:**
@@ -327,7 +293,6 @@ public class BillPughSingleton {
 ```
 
 -
--
 ### Enum Singleton
 * **Solution:** Java ensures that any enum value is instantiated only once.
 * **Consequence:** does not allow lazy initialization.
@@ -338,8 +303,6 @@ public enum EnumSingleton {
 }
 ```
 
-
--
 -
 ### Usage
 * Notice the two different syntaxes for referencing a singleton object.
@@ -376,8 +339,7 @@ public class Main {
 
 
 
-
-
+-
 -
 ## Creational Patterns: Factory
 * Defers some part of object construction to another class
@@ -391,7 +353,6 @@ public class Main {
 	* Provides an interface for creating families of related or dependent objects without specifying their concrete classes.
 
 
--
 -
 ## Creational Patterns: Builder
 * Separate the construction of a complex object from its representation so that the same construction process can create different representations
@@ -437,7 +398,7 @@ public class Main {
 
 
 
-
+-
 -
 # Structural Patterns
 * Handles composition of classes or objects
@@ -447,12 +408,10 @@ public class Main {
 
 
 -
--
 ## Structural Patterns: Decorator
 * Attach additional responsibilities to an obejct dynamically
 * Provides a flexible alternatie to subclassing for extending functionality.
 
--
 -
 ## Structural Patterns: Adapter
 * Converts interface of a class into another interface expected by client.
@@ -481,7 +440,7 @@ public class Main {
 
 
 
-
+-
 -
 # Behavioral Patterns
 * Characterize the ways in which classes or objects interact and distribute responsibility.
@@ -489,7 +448,6 @@ public class Main {
 	* Command
 	* Observer
 
--
 -
 ## Behavioral Patterns: Command
 * Command interface
