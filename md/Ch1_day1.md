@@ -123,7 +123,7 @@ The integer types are for numbers without fractional parts.
 
 ###Floating-Point Types
 
-The foating-point types denote numbers with fractional parts
+The floating-point types denote numbers with fractional parts
 
 | Type   | Storage requirments | Range (Inclusive)                                              |
 | ------ |:------------------- | :------------------------------------------------------------- |
