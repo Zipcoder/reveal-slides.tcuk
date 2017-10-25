@@ -334,7 +334,6 @@ public class Main {
 
 
 
-
 -
 -
 ## Creational Patterns: Factory
@@ -343,12 +342,16 @@ public class Main {
 	* A method which is responsible for instantiating and returning an object.
 * [Factory Pattern](https://github.com/Zipcoder/TC-LectureDemo-DesignPrinciples/blob/master/src/main/java/io/zipcoder/design_demo/stage6/Main.java)
 	* A system which includes a class solely responsible for creation of another.
-* Factory Class Pattern
-	* A system in which some part of object creation is defered to its subclass.
 * Abstract Factory Class Pattern
 	* Provides an interface for creating families of related or dependent objects without specifying their concrete classes.
 
+-
+-
 
+![Image of Puppies](https://i.ytimg.com/vi/bxvoEiCas5Y/maxresdefault.jpg)
+
+
+-
 -
 ## Creational Patterns: Builder
 * Separate the construction of a complex object from its representation so that the same construction process can create different representations
