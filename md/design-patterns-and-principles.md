@@ -367,7 +367,7 @@ There are three major issues with Factory and Abstract Factory design patterns w
 -
 -
 
-![Image of Puppies](https://pbs.twimg.com/media/DNBbo_1XcAEJvtX.jpg:large)
+![Image of Puppies](https://pbs.twimg.com/media/DNBbo_1XcAEJvtX.jpg:large =235x304)
 
 
 -
