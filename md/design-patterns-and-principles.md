@@ -364,10 +364,6 @@ There are three major issues with Factory and Abstract Factory design patterns w
 2. Some of the parameters might be optional but in Factory pattern, we are forced to send all the parameters and optional parameters need to send as NULL.
 3. If the object is heavy and its creation is complex, then all that complexity will be part of Factory classes that is confusing.
 
--
--
-![Image of Puppies](https://i.pinimg.com/736x/95/2a/04/952a04ea85a8d1b0134516c52198745e--rottweilers-labradors.jpg)
-
 
 -
 -
@@ -390,37 +386,33 @@ There are three major issues with Factory and Abstract Factory design patterns w
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 -
 -
 # Behavioral Patterns
 * Characterize the ways in which classes or objects interact and distribute responsibility.
 * Some Examples:
-	* Command
 	* Observer
+	* Command
+
+-
+## Behavioral Patterns: Observer
+* Register observer
+* Remove observer
+* Notify observer on state change
+
 
 -
 ## Behavioral Patterns: Command
 * Command interface
 	* Decoupling "what is done" from "when it is done"
 	* Concrete commands objects are tasks; i.e. - `UNDO_TASK`
+
+-
+## Behavioral Patterns: Command
+You'll see command being used a lot when you need to have multiple undo operations, where a stack of the recently executed commands are maintained. To implement the undo, all you need to do is get the last Command in the stack and execute it's undo() method.
+
+You'll also find Command useful for wizards, progress bars, GUI buttons and menu actions, and other transactional behaviour.  
+
+-
+-
+![Image of Puppies](https://i.pinimg.com/736x/95/2a/04/952a04ea85a8d1b0134516c52198745e--rottweilers-labradors.jpg)
