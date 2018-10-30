@@ -177,8 +177,7 @@ All variables in an interface become `public static final`.
 
 -
 * Added in Java 8
-* Used to have to be in a companion class
-* `Collection` vs `Collections`
+
 * Allows for interface evolution
   * This means that when new things are added, by adding a default method the older code will still work fine.
 
