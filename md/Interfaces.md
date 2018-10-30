@@ -230,4 +230,4 @@ public class Something implements Comparable<Something> {
 * Runnable
 * EventHandler<T>
 * Serializable
-* Coneable
+* Cloneable
